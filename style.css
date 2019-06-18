@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'kongshomjbold';
+    src: url('kongshomj-bold-webfont.woff2') format('woff2'),
+    url('kongshomj-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: url('SamsungSharpSans-Bold.eot');
+    src: url('SamsungSharpSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('SamsungSharpSans-Bold.woff2') format('woff2'),
+    url('SamsungSharpSans-Bold.woff') format('woff'),
+    url('SamsungSharpSans-Bold.ttf') format('truetype'),
+    url('SamsungSharpSans-Bold.svg#SamsungSharpSans-Bold') format('svg');
+    font-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kongshomjbold' !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 90px;
+    width: 728px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.ad_area{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide_1,.slide_2,.slide_3{
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide_1{
+    background-image: url("images/slide1.jpg");
+}
+
+.slide_2{
+    background-image: url("images/slide4.jpg");
+    animation: fadeIn 0.4s 1 ease;
+}
+
+.slide_3{
+    background-image: url("images/slide3.jpg");
+    animation: fadeIn 0.4s 1 ease;
+}
+
+
+
+.predict_btn{
+    padding-top: 2px;
+    font-size: 8px;
+    text-align: center;
+    color: white;
+    height: 15px;
+    width: 86px;
+    background-color: #135949;
+    top: 225px;
+    left: 107px;
+}
+
+.team_A_flag,.team_B_flag{
+    top:25px;
+}
+
+.team_A_flag{
+    left: 220px;
+}
+.team_B_flag{
+    left: 273px;
+}
+
+.team_A_name,.team_B_name{
+    color: white;
+    top: 44px;
+}
+
+.team_A_name, .team_B_name{
+    font-family: 'Samsung Sharp Sans' !important;
+    font-size: 8px;
+}
+
+.team_A_name{
+    left: 226px;
+}
+
+.team_B_name{
+    left: 278px;
+}
+
+.team_A_card,.team_B_card{
+    width: 65px;
+    text-align: center;
+    font-family: 'Samsung Sharp Sans' !important;
+    font-size: 6px;
+    color: white;
+    top: 57px;
+}
+
+.team_A_card{
+    left: 202px;
+}
+
+.team_B_card{
+    left: 252px;
+}
+
+/*change*/
+.team_A,.team_B{
+    padding-top: 1px;
+    color: white;
+    font-size: 9px;
+    top: 37px;
+    animation: changer 1.6s infinite ease;
+}
+
+@keyframes changer {
+    0%,50%,100%{
+        color: white;
+    }
+    25%,75%{
+        color: black;
+    }
+}
+
+.team_A img, .team_B img{
+    margin-top: 3px;
+}
+
+.team_A{
+    left: 370px;
+}
+/*change*/
+.team_B{
+    right: 190px;
+}
+
+.team_A:hover,.team_B:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.name_input,.number_input{
+    text-align: center;
+    width: 160px;
+}
+input{
+    font-family: Georgia !important;
+    width: 120px;
+    height: 22px;
+    text-align: center;
+}
+
+.name_input{
+    top: 50px;
+    left: 235px;
+}
+
+.number_input{
+    top: 50px;
+    left: 400px;
+}
+
+/*change*/
+.message_box{
+    width: 100%;
+    text-align: center;
+    font-family: Georgia !important;
+    font-size: 10px;
+    top: 10px;
+}
+
+.submit_btn,.click_btn{
+    top: 47px;
+    left: 555px;
+    /*95*/
+    animation: toggy 0.5s ease infinite;
+    transform: scale(0.95);
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.click_btn{
+    top: 32px;
+}
+
+@keyframes toggy {
+    0%,100%{
+        transform: scale(0.95);
+    }
+    50%{
+	transform: scale(1);
+    }
+}
+
+
+
+#teamA_name,#teamB_name{
+    font-family: Georgia !important;
+    font-size: 9px;
+}
+/*change*/
+#teamA_icon, #teamB_icon{
+    height: 9px;
+    width: 9px;
+}
